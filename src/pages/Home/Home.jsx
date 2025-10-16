@@ -20,7 +20,7 @@ function Home() {
               <motion.p
                 initial={{ filter: "blur(10px)", opacity: 0, y: 12 }}
                 animate={{ filter: "blur(0)", opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
+                transition={{ duration: 0.5, delay: 0.5 + 0.1 * index }}
                 key={index}
                 className="inline-block mr-5 xl:text-[80px] font-serif text-[50px] text-[#632393] font-bold [text-shadow:1px_1px_0_white,-1px_-1px_0_white,1px_-1px_0_white,-1px_1px_0_white]"
               >
@@ -34,7 +34,7 @@ function Home() {
                 animate={{ opacity: 1 }}
                 transition={{
                   duration: 0.6,
-                  delay: 0.7 + i * 0.1,
+                  delay: 1.2 + i * 0.1,
                 }}
                 key={i}
                 className=" xl:text-[20px] font-roboto text-[#C92F28] font-[500] [text-shadow:1px_1px_0_white,-1px_-1px_0_white,1px_-1px_0_white,-1px_1px_0_white]"
