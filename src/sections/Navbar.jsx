@@ -9,11 +9,12 @@ function Navbar() {
         <select
           name="languages"
           id="languages"
-          className="absolute right-[15px] text-[#C92F28] border-none focus:outline-none font-roboto lg:text-[18px]"
+          className="cursor-pointer absolute right-[15px] text-[#C92F28] border-none focus:outline-none font-roboto lg:text-[18px]"
           defaultValue="uzb"
         >
-          <option value="rus">Rus</option>
           <option value="uzb">Uzb</option>
+          <option value="eng">Eng</option>
+          <option value="rus">Rus</option>
         </select>
       </div>
     </div>
