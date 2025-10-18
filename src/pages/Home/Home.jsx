@@ -80,21 +80,17 @@ function Home() {
           ))}
         </div>
         <div className="text-center flex flex-col xl:flex-row xl:justify-center items-center gap-[50px] xl:gap-[80px] mt-[40px] xl:mt-[110px] mb-[40px] xl:mb-[120px]">
-  {/* 1-chi karta */}
+  {/* 1-karta */}
   <motion.div
     ref={ref1}
-    initial={false}
-    animate={inView1 ? "visible" : "hidden"}
-    variants={{
-      visible: { opacity: 1 },
-      hidden: { opacity: 0 },
-    }}
-    transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
+    initial={{ opacity: 1 }}
+    animate={{ opacity: 1 }}
     className="rounded-[40px] border-[1px] border-solid border-[#632393] h-[300px] w-[350px] xl:h-[320px] xl:w-[370px] flex flex-col justify-center bg-[#632393] overflow-hidden 
     transition-all duration-500 ease-in-out hover:bg-white hover:border-[#632393] hover:shadow-[0_8px_25px_#C92F28] group"
   >
     <motion.h2
-      variants={{ visible: { opacity: 1 }, hidden: { opacity: 0 } }}
+      initial={{ opacity: 0 }}
+      animate={inView1 ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6, delay: 1.5 }}
       className="cursor-default text-[70px] xl:text-[75px] font-[700] text-white transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
     >
@@ -108,10 +104,8 @@ function Home() {
     </motion.h2>
 
     <motion.h2
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -10, opacity: 0 },
-      }}
+      initial={{ y: -10, opacity: 0 }}
+      animate={inView1 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
       transition={{ delay: 2.4, duration: 0.5, ease: "easeOut" }}
       className="text-white text-[25px] xl:text-[30px] font-[600] transition-colors duration-500 ease-in-out group-hover:text-[#632393] cursor-default"
     >
@@ -119,19 +113,15 @@ function Home() {
     </motion.h2>
 
     <motion.hr
-      variants={{
-        visible: { scaleX: 1 },
-        hidden: { scaleX: 0 },
-      }}
+      initial={{ scaleX: 0 }}
+      animate={inView1 ? { scaleX: 1 } : { scaleX: 0 }}
       transition={{ delay: 1.8, duration: 0.6, ease: "easeOut" }}
       className="border-t-2 border-white w-[250px] mx-auto my-[10px] origin-center transition-colors duration-500 ease-in-out group-hover:border-[#632393]"
     />
 
     <motion.h3
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -10, opacity: 0 },
-      }}
+      initial={{ y: -10, opacity: 0 }}
+      animate={inView1 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
       transition={{ delay: 3, duration: 0.5, ease: "easeOut" }}
       className="text-white cursor-default text-[15px] xl:text-[17px] font-[500] transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
     >
@@ -141,21 +131,17 @@ function Home() {
     </motion.h3>
   </motion.div>
 
-  {/* 2-chi karta */}
+  {/* 2-karta */}
   <motion.div
     ref={ref2}
-    initial={false}
-    animate={inView2 ? "visible" : "hidden"}
-    variants={{
-      visible: { opacity: 1 },
-      hidden: { opacity: 0 },
-    }}
-    transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
+    initial={{ opacity: 1 }}
+    animate={{ opacity: 1 }}
     className="rounded-[40px] border-[1px] border-solid border-[#632393] h-[300px] w-[350px] xl:h-[320px] xl:w-[370px] flex flex-col justify-center bg-[#632393] overflow-hidden 
     transition-all duration-500 ease-in-out hover:bg-white hover:border-[#632393] hover:shadow-[0_8px_25px_#C92F28] group"
   >
     <motion.h2
-      variants={{ visible: { opacity: 1 }, hidden: { opacity: 0 } }}
+      initial={{ opacity: 0 }}
+      animate={inView2 ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6, delay: 1.5 }}
       className="cursor-default text-[70px] xl:text-[75px] font-[700] text-white transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
     >
@@ -163,10 +149,8 @@ function Home() {
     </motion.h2>
 
     <motion.h2
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -10, opacity: 0 },
-      }}
+      initial={{ y: -10, opacity: 0 }}
+      animate={inView2 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
       transition={{ delay: 2.4, duration: 0.5, ease: "easeOut" }}
       className="text-white text-[25px] xl:text-[30px] font-[600] transition-colors duration-500 ease-in-out group-hover:text-[#632393] cursor-default"
     >
@@ -174,19 +158,15 @@ function Home() {
     </motion.h2>
 
     <motion.hr
-      variants={{
-        visible: { scaleX: 1 },
-        hidden: { scaleX: 0 },
-      }}
+      initial={{ scaleX: 0 }}
+      animate={inView2 ? { scaleX: 1 } : { scaleX: 0 }}
       transition={{ delay: 1.8, duration: 0.6, ease: "easeOut" }}
       className="border-t-2 border-white w-[250px] mx-auto my-[10px] origin-center transition-colors duration-500 ease-in-out group-hover:border-[#632393]"
     />
 
     <motion.h3
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -10, opacity: 0 },
-      }}
+      initial={{ y: -10, opacity: 0 }}
+      animate={inView2 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
       transition={{ delay: 3, duration: 0.5, ease: "easeOut" }}
       className="text-white cursor-default text-[15px] xl:text-[17px] font-[500] transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
     >
@@ -196,21 +176,17 @@ function Home() {
     </motion.h3>
   </motion.div>
 
-  {/* 3-chi karta */}
+  {/* 3-karta */}
   <motion.div
     ref={ref3}
-    initial={false}
-    animate={inView3 ? "visible" : "hidden"}
-    variants={{
-      visible: { opacity: 1 },
-      hidden: { opacity: 0 },
-    }}
-    transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
+    initial={{ opacity: 1 }}
+    animate={{ opacity: 1 }}
     className="rounded-[40px] border-[1px] border-solid border-[#632393] h-[300px] w-[350px] xl:h-[320px] xl:w-[370px] flex flex-col justify-center bg-[#632393] overflow-hidden 
     transition-all duration-500 ease-in-out hover:bg-white hover:border-[#632393] hover:shadow-[0_8px_25px_#C92F28] group"
   >
     <motion.h2
-      variants={{ visible: { opacity: 1 }, hidden: { opacity: 0 } }}
+      initial={{ opacity: 0 }}
+      animate={inView3 ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6, delay: 1.5 }}
       className="cursor-default text-[70px] xl:text-[75px] font-[700] text-white transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
     >
@@ -224,10 +200,8 @@ function Home() {
     </motion.h2>
 
     <motion.h2
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -10, opacity: 0 },
-      }}
+      initial={{ y: -10, opacity: 0 }}
+      animate={inView3 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
       transition={{ delay: 2.4, duration: 0.5, ease: "easeOut" }}
       className="text-white text-[25px] xl:text-[30px] font-[600] transition-colors duration-500 ease-in-out group-hover:text-[#632393] cursor-default"
     >
@@ -235,19 +209,15 @@ function Home() {
     </motion.h2>
 
     <motion.hr
-      variants={{
-        visible: { scaleX: 1 },
-        hidden: { scaleX: 0 },
-      }}
+      initial={{ scaleX: 0 }}
+      animate={inView3 ? { scaleX: 1 } : { scaleX: 0 }}
       transition={{ delay: 1.8, duration: 0.6, ease: "easeOut" }}
       className="border-t-2 border-white w-[250px] mx-auto my-[10px] origin-center transition-colors duration-500 ease-in-out group-hover:border-[#632393]"
     />
 
     <motion.h3
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -10, opacity: 0 },
-      }}
+      initial={{ y: -10, opacity: 0 }}
+      animate={inView3 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
       transition={{ delay: 3, duration: 0.5, ease: "easeOut" }}
       className="text-white cursor-default text-[15px] xl:text-[17px] font-[500] transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
     >
@@ -258,157 +228,6 @@ function Home() {
   </motion.div>
 </div>
 
-        {/* <div className="text-center flex flex-col xl:flex-row xl:justify-center items-center gap-[50px] xl:gap-[80px] mt-[40px] xl:mt-[110px] mb-[40px] xl:mb-[120px]">
-    
-          <motion.div
-            ref={ref1}
-            initial={{ opacity: 0 }}
-            animate={inView1 ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
-            className="rounded-[40px] border-[1px] border-solid border-[#632393] h-[300px] w-[350px] xl:h-[320px] xl:w-[370px] flex flex-col justify-center bg-[#632393] overflow-hidden 
-        transition-all duration-500 ease-in-out hover:bg-white hover:border-[#632393] hover:shadow-[0_8px_25px_#C92F28] group"
-          >
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={inView1 ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
-              className="cursor-default text-[70px] xl:text-[75px] font-[700] text-white transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
-            >
-              <CountUp
-                start={inView1 ? 0 : null}
-                end={10}
-                duration={3}
-                delay={1.5}
-                suffix="+"
-              />
-            </motion.h2>
-
-            <motion.h2
-              initial={{ y: -10, opacity: 0 }}
-              animate={inView1 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
-              transition={{ delay: 2.4, duration: 0.5, ease: "easeOut" }}
-              className="text-white text-[25px] xl:text-[30px] font-[600] transition-colors duration-500 ease-in-out group-hover:text-[#632393] cursor-default"
-            >
-              Yillik tajriba
-            </motion.h2>
-
-            <motion.hr
-              initial={{ scaleX: 0 }}
-              animate={inView1 ? { scaleX: 1 } : { scaleX: 0 }}
-              transition={{ delay: 1.8, duration: 0.6, ease: "easeOut" }}
-              className="border-t-2 border-white w-[250px] mx-auto my-[10px] origin-center transition-colors duration-500 ease-in-out group-hover:border-[#632393]"
-            />
-
-            <motion.h3
-              initial={{ y: -10, opacity: 0 }}
-              animate={inView1 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
-              transition={{ delay: 3, duration: 0.5, ease: "easeOut" }}
-              className="text-white cursor-default text-[15px] xl:text-[17px] font-[500] transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
-            >
-              Yillar sinovidan o‘tgan
-              <br />
-              ishonchli sifat
-            </motion.h3>
-          </motion.div>
-
-         
-          <motion.div
-            ref={ref2}
-            initial={{ opacity: 0 }}
-            animate={inView2 ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
-            className="rounded-[40px] border-[1px] border-solid border-[#632393] h-[300px] w-[350px] xl:h-[320px] xl:w-[370px] flex flex-col justify-center bg-[#632393] overflow-hidden 
-        transition-all duration-500 ease-in-out hover:bg-white hover:border-[#632393] hover:shadow-[0_8px_25px_#C92F28] group"
-          >
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={inView2 ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
-              className="cursor-default text-[70px] xl:text-[75px] font-[700] text-white transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
-            >
-              <i className="fa-solid fa-gem"></i>
-            </motion.h2>
-
-            <motion.h2
-              initial={{ y: -10, opacity: 0 }}
-              animate={inView2 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
-              transition={{ delay: 2.4, duration: 0.5, ease: "easeOut" }}
-              className="text-white text-[25px] xl:text-[30px] font-[600] transition-colors duration-500 ease-in-out group-hover:text-[#632393] cursor-default"
-            >
-              Yuqori sifat
-            </motion.h2>
-
-            <motion.hr
-              initial={{ scaleX: 0 }}
-              animate={inView2 ? { scaleX: 1 } : { scaleX: 0 }}
-              transition={{ delay: 1.8, duration: 0.6, ease: "easeOut" }}
-              className="border-t-2 border-white w-[250px] mx-auto my-[10px] origin-center transition-colors duration-500 ease-in-out group-hover:border-[#632393]"
-            />
-
-            <motion.h3
-              initial={{ y: -10, opacity: 0 }}
-              animate={inView2 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
-              transition={{ delay: 3, duration: 0.5, ease: "easeOut" }}
-              className="text-white cursor-default text-[15px] xl:text-[17px] font-[500] transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
-            >
-              Har bir ipda mukammallikni
-              <br />
-              ta’minlaymiz
-            </motion.h3>
-          </motion.div>
-
-        
-          <motion.div
-            ref={ref3}
-            initial={{ opacity: 0 }}
-            animate={inView3 ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8, delay: 1.2, ease: "easeOut" }}
-            className="rounded-[40px] border-[1px] border-solid border-[#632393] h-[300px] w-[350px] xl:h-[320px] xl:w-[370px] flex flex-col justify-center bg-[#632393] overflow-hidden 
-        transition-all duration-500 ease-in-out hover:bg-white hover:border-[#632393] hover:shadow-[0_8px_25px_#C92F28] group"
-          >
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={inView3 ? { opacity: 1 } : { opacity: 0 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
-              className="cursor-default text-[70px] xl:text-[75px] font-[700] text-white transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
-            >
-              <CountUp
-                start={inView3 ? 0 : null}
-                end={1500}
-                duration={1.7}
-                delay={1.5}
-                suffix="+"
-              />
-            </motion.h2>
-
-            <motion.h2
-              initial={{ y: -10, opacity: 0 }}
-              animate={inView3 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
-              transition={{ delay: 2.4, duration: 0.5, ease: "easeOut" }}
-              className="text-white text-[25px] xl:text-[30px] font-[600] transition-colors duration-500 ease-in-out group-hover:text-[#632393] cursor-default"
-            >
-              Jozibali ranglar
-            </motion.h2>
-
-            <motion.hr
-              initial={{ scaleX: 0 }}
-              animate={inView3 ? { scaleX: 1 } : { scaleX: 0 }}
-              transition={{ delay: 1.8, duration: 0.6, ease: "easeOut" }}
-              className="border-t-2 border-white w-[250px] mx-auto my-[10px] origin-center transition-colors duration-500 ease-in-out group-hover:border-[#632393]"
-            />
-
-            <motion.h3
-              initial={{ y: -10, opacity: 0 }}
-              animate={inView3 ? { y: 0, opacity: 1 } : { y: -10, opacity: 0 }}
-              transition={{ delay: 3, duration: 0.5, ease: "easeOut" }}
-              className="text-white cursor-default text-[15px] xl:text-[17px] font-[500] transition-colors duration-500 ease-in-out group-hover:text-[#632393]"
-            >
-              Har qanday g‘oyani ifodalovchi
-              <br />
-              boy rang palitrasi
-            </motion.h3>
-          </motion.div>
-        </div> */}
       </div>
     </div>
   );
